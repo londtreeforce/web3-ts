@@ -5,7 +5,7 @@ import App from "./App";
 import "./index.css";
 //this manifest is used temporarily for development purposes
 const manifestUrl =
-  "URL";
+  "https://raw.githubusercontent.com/londtreeforce/web3-ts/main/tonconnect-manifest.json";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },

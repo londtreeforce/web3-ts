@@ -13,7 +13,7 @@ export function useFaucetJettonContract() {
   const faucetJettonContract = useAsyncInitialize(async () => {
     if (!client || !wallet) return;
     const contract = new FaucetJetton(
-      Address.parse("EQB8StgTQXidy32a8xfu7j4HMoWYV0b0cFM8nXsP2cza_b7Y") // replace with your address from tutorial 2 step 8
+      Address.parse("EQDUe600N-kN8bYgFMstDeyL5yWvjx05k-9QFP4n2iDVWW85") // replace with your address from tutorial 2 step 8
     );
     return client.open(contract) as OpenedContract<FaucetJetton>;
   }, [client, wallet]);
